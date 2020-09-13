@@ -1,5 +1,3 @@
-#!bin/bash
-
 # Color
 COLOR_BLUE='\e[1;34m'
 NO_COLOR='\e[0m'
