@@ -31,5 +31,5 @@ sudo apt install docker-ce
 echo "Docker should now be installed." 
 echo -e "Check if docker's daemon is running by typing${COLOR_BLUE} sudo systemctl status docker${NO_COLOR}."
 echo "The output should have something similar like the following"
-echo "Active:${COLOR_GREEN} active (running)${NO_COLOR} since Tue 2020-05-19 17:00:41 UTC; 17s ago"
+echo -e "Active:${COLOR_GREEN} active (running)${NO_COLOR} since Tue 2020-05-19 17:00:41 UTC; 17s ago"
 
