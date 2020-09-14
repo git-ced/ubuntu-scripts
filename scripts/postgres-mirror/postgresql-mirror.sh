@@ -13,7 +13,7 @@ REMOTE_PG_DB=''
 LOCAL_PG_USER=''
 
 colored_echo () {
-  echo -e "${COLOR_BLUE} $1${NO_COLOR}"
+  echo -e "${COLOR_BLUE}$1${NO_COLOR}"
 }
 
 # Start of script
