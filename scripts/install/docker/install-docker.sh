@@ -35,4 +35,3 @@ echo -e "${COLOR_BLUE}sudo systemctl status docker${NO_COLOR}.\n"
 
 echo "The output should have something similar like the following:"
 echo -e "Active:${COLOR_GREEN} active (running)${NO_COLOR} since Tue 2020-05-19 17:00:41 UTC; 17s ago\n\n"
-
