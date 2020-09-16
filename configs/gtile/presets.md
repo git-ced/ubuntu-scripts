@@ -1,18 +1,3 @@
-<style>
-  table, tr {
-    width: 100%;
-  }
-
-  td:first-child {
-    font-weight: 600;
-    background-color: #D3D3D3
-  }
-
-  td {
-    border: 2px solid #A9A9A9
-  }
-</style>
-
 # Gtile Presets
 
 <!-- ANCHOR Half Screen -->
