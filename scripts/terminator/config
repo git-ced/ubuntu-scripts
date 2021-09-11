@@ -73,7 +73,7 @@
       profile = default
       title = Root
       uuid = 80f97a67-1fb8-4dc5-b456-5433aa84d3c6
-      command = sleep 1; cd ~/Documents/GitHub/lyon.com.ph; bash
+      command = cd ~/Documents/GitHub/lyon.com.ph; bash
     [[[firebase-package]]]
       type = Terminal
       parent = child3
@@ -82,7 +82,7 @@
       profile = default
       title = Firebase Package
       uuid = 1ae0b458-6b04-4fff-9e97-8e2fe29ace09
-      command = sleep 1; cd ~/Documents/GitHub/lyon.com.ph/packages/firebase; yarn && yarn build; bash
+      command = cd ~/Documents/GitHub/lyon.com.ph/packages/firebase; yarn && yarn build; bash
     [[[child6]]]
       type = VPaned
       parent = child2
@@ -97,7 +97,7 @@
       profile = default
       title = Landing Page App
       uuid = 812df257-c6b1-458b-b94b-8bc6935400b1
-      command = sleep 1; cd ~/Documents/GitHub/lyon.com.ph/packages/landing-page-app; yarn && yarn dev; bash
+      command = cd ~/Documents/GitHub/lyon.com.ph/packages/landing-page-app; yarn && yarn dev; bash
     [[[community-app]]]
       type = Terminal
       parent = child6
@@ -106,7 +106,7 @@
       profile = default
       title = Community App
       uuid = 67eb3a23-12b2-40d7-af41-659b723f99d1
-      command = sleep 1; cd ~/Documents/GitHub/lyon.com.ph/packages/community-app; yarn && yarn dev; bash
+      command = cd ~/Documents/GitHub/lyon.com.ph/packages/community-app; yarn && yarn dev; bash
     [[[child9]]]
       type = HPaned
       parent = child1
@@ -121,7 +121,7 @@
       profile = default
       title = Root
       uuid = 9aa972a2-df41-4e03-9ec2-42423cdb88dc
-      command = sleep 1; cd ~/Documents/GitHub/services; bash
+      command = cd ~/Documents/GitHub/services; bash
       directory = ""
     [[[child11]]]
       type = VPaned
@@ -137,7 +137,7 @@
       profile = default
       title = Auth Service
       uuid = e842681b-a21d-4099-9a4e-e35892f79f02
-      command = sleep 1; cd ~/Documents/GitHub/services/packages/auth; yarn; bash
+      command = cd ~/Documents/GitHub/services/packages/auth; yarn; bash
       directory = ""
     [[[proxy-service]]]
       type = Terminal
@@ -147,6 +147,6 @@
       profile = default
       title = Proxy Service
       uuid = e5b7224f-7a47-47e6-bce0-81f2ac8c482d
-      command = sleep 1; cd ~/Documents/GitHub/services/packages/proxy; yarn; bash
+      command = cd ~/Documents/GitHub/services/packages/proxy; yarn; bash
       directory = ""
 [plugins]
