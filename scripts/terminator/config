@@ -44,7 +44,7 @@
       maximised = True
       fullscreen = False
       size = 1904, 1041
-      title = cheb@pop-os: ~/Documents/GitHub/lyon.com.ph/packages/firebase
+      title = Lyon V2
       last_active_window = True
     [[[child1]]]
       type = Notebook
@@ -65,7 +65,7 @@
       order = 0
       position = 492
       ratio = 0.5
-    [[[terminal4]]]
+    [[[root]]]
       type = Terminal
       parent = child3
       order = 0
@@ -73,7 +73,8 @@
       profile = default
       title = Root
       uuid = 80f97a67-1fb8-4dc5-b456-5433aa84d3c6
-    [[[terminal5]]]
+      command = sleep 1; cd ~/Documents/GitHub/lyon.com.ph; bash
+    [[[firebase-package]]]
       type = Terminal
       parent = child3
       order = 1
@@ -81,13 +82,14 @@
       profile = default
       title = Firebase Package
       uuid = 1ae0b458-6b04-4fff-9e97-8e2fe29ace09
+      command = sleep 1; cd ~/Documents/GitHub/lyon.com.ph/packages/firebase; yarn && yarn build; bash
     [[[child6]]]
       type = VPaned
       parent = child2
       order = 1
       position = 492
       ratio = 0.5
-    [[[terminal7]]]
+    [[[landing-page-app]]]
       type = Terminal
       parent = child6
       order = 0
@@ -95,7 +97,8 @@
       profile = default
       title = Landing Page App
       uuid = 812df257-c6b1-458b-b94b-8bc6935400b1
-    [[[terminal8]]]
+      command = sleep 1; cd ~/Documents/GitHub/lyon.com.ph/packages/landing-page-app; yarn && yarn dev; bash
+    [[[community-app]]]
       type = Terminal
       parent = child6
       order = 1
@@ -103,13 +106,14 @@
       profile = default
       title = Community App
       uuid = 67eb3a23-12b2-40d7-af41-659b723f99d1
+      command = sleep 1; cd ~/Documents/GitHub/lyon.com.ph/packages/community-app; yarn && yarn dev; bash
     [[[child9]]]
       type = HPaned
       parent = child1
       order = 1
       position = 941
       ratio = 0.5
-    [[[terminal10]]]
+    [[[root]]]
       type = Terminal
       parent = child9
       order = 0
@@ -117,15 +121,15 @@
       profile = default
       title = Root
       uuid = 9aa972a2-df41-4e03-9ec2-42423cdb88dc
+      command = sleep 1; cd ~/Documents/GitHub/services; bash
       directory = ""
-      command = ""
     [[[child11]]]
       type = VPaned
       parent = child9
       order = 1
       position = 502
       ratio = 0.5101626016260162
-    [[[terminal12]]]
+    [[[auth-service]]]
       type = Terminal
       parent = child11
       order = 0
@@ -133,8 +137,9 @@
       profile = default
       title = Auth Service
       uuid = e842681b-a21d-4099-9a4e-e35892f79f02
+      command = sleep 1; cd ~/Documents/GitHub/services/packages/auth; yarn; bash
       directory = ""
-    [[[terminal13]]]
+    [[[proxy-service]]]
       type = Terminal
       parent = child11
       order = 1
@@ -142,6 +147,6 @@
       profile = default
       title = Proxy Service
       uuid = e5b7224f-7a47-47e6-bce0-81f2ac8c482d
-      command = sleep 1; cd ~/Documents/GitHub/services/packages/proxy; bash
+      command = sleep 1; cd ~/Documents/GitHub/services/packages/proxy; yarn; bash
       directory = ""
 [plugins]
