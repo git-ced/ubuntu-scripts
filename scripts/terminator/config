@@ -1,0 +1,153 @@
+[global_config]
+  focus = mouse
+  handle_size = 20
+  window_state = maximise
+  tab_position = bottom
+  broadcast_default = off
+  scroll_tabbar = True
+  title_transmit_bg_color = "#7e20f3"
+  title_inactive_fg_color = "#d3d7cf"
+  title_inactive_bg_color = "#450c8d"
+  inactive_color_offset = 0.703125
+  enabled_plugins = LaunchpadBugURLHandler, LaunchpadCodeURLHandler, APTURLHandler, TerminalShot, ActivityWatch
+  suppress_multiple_term_dialog = True
+  title_use_system_font = False
+  title_font = Fira Sans Semi-Light 9
+[keybindings]
+  new_tab = <Primary>t
+  close_term = <Primary>w
+  close_window = <Primary>q
+[profiles]
+  [[default]]
+    background_darkness = 0.95
+    background_type = transparent
+    cursor_color = "#450c8d"
+    scrollbar_position = hidden
+    scroll_on_output = True
+    scrollback_lines = 1000
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    use_theme_colors = True
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+  [[lyon-v2]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 0:0
+      maximised = True
+      fullscreen = False
+      size = 1904, 1041
+      title = Lyon V2
+      last_active_window = True
+    [[[child1]]]
+      type = Notebook
+      parent = child0
+      order = 0
+      labels = lyon.com.ph, services.lyon
+      last_active_term = 1ae0b458-6b04-4fff-9e97-8e2fe29ace09, 9aa972a2-df41-4e03-9ec2-42423cdb88dc
+      active_page = 0
+    [[[child2]]]
+      type = HPaned
+      parent = child1
+      order = 0
+      position = 941
+      ratio = 0.5
+    [[[child3]]]
+      type = VPaned
+      parent = child2
+      order = 0
+      position = 492
+      ratio = 0.5
+    [[[root-lyon]]]
+      type = Terminal
+      parent = child3
+      order = 0
+      group = lyon.com.ph
+      profile = default
+      title = Root
+      uuid = 80f97a67-1fb8-4dc5-b456-5433aa84d3c6
+      command = cd ~/Documents/GitHub/LyonInc/lyon.com.ph; code ./; bash
+    [[[drive-app]]]
+      type = Terminal
+      parent = child3
+      order = 1
+      group = lyon.com.ph
+      profile = default
+      title = Firebase Package
+      uuid = 1ae0b458-6b04-4fff-9e97-8e2fe29ace09
+      command = cd ~/Documents/GitHub/LyonInc/lyon.com.ph/packages/drive-app; yarn; bash;
+    [[[child6]]]
+      type = VPaned
+      parent = child2
+      order = 1
+      position = 492
+      ratio = 0.5
+    [[[landing-page-app]]]
+      type = Terminal
+      parent = child6
+      order = 0
+      group = lyon.com.ph
+      profile = default
+      title = Landing Page App
+      uuid = 812df257-c6b1-458b-b94b-8bc6935400b1
+      command = cd ~/Documents/GitHub/LyonInc/lyon.com.ph/packages/landing-page-app; yarn; bash;
+    [[[community-app]]]
+      type = Terminal
+      parent = child6
+      order = 1
+      group = lyon.com.ph
+      profile = default
+      title = Community App
+      uuid = 67eb3a23-12b2-40d7-af41-659b723f99d1
+      command = cd ~/Documents/GitHub/LyonInc/lyon.com.ph/packages/community-app; yarn; bash;
+    [[[child9]]]
+      type = HPaned
+      parent = child1
+      order = 1
+      position = 941
+      ratio = 0.5
+    [[[root-services]]]
+      type = Terminal
+      parent = child9
+      order = 0
+      group = services.lyon
+      profile = default
+      title = Root
+      uuid = 9aa972a2-df41-4e03-9ec2-42423cdb88dc
+      command = cd ~/Documents/GitHub/LyonInc/services; code ./; bash
+      directory = ""
+    [[[child11]]]
+      type = VPaned
+      parent = child9
+      order = 1
+      position = 502
+      ratio = 0.5101626016260162
+    [[[auth-service]]]
+      type = Terminal
+      parent = child11
+      order = 0
+      group = services.lyon
+      profile = default
+      title = Auth Service
+      uuid = e842681b-a21d-4099-9a4e-e35892f79f02
+      command = cd ~/Documents/GitHub/LyonInc/services/packages/auth; yarn && yarn dev; bash
+      directory = ""
+    [[[proxy-service]]]
+      type = Terminal
+      parent = child11
+      order = 1
+      group = services.lyon
+      profile = default
+      title = Proxy Service
+      uuid = e5b7224f-7a47-47e6-bce0-81f2ac8c482d
+      command = cd ~/Documents/GitHub/LyonInc/services/packages/proxy; yarn; bash
+      directory = ""
+[plugins]
